@@ -373,7 +373,7 @@ if __name__ == '__main__':
         print("That was sudden...")
     finally:
         print("Thanks for playing! Bye!")
-        sys.exit(f"KeyboardInterrupt: y you exit the game?!?!")
+        sys.exit(f"KeyboardInterrupt: See you next time!")
 
 """
 How did you approach this term project? Where did you get stuck, and how did you get unstuck?
