@@ -1,8 +1,8 @@
 lighter|A4
 torch (Unlocked)|A4
 Key A (Achievement)|A4
-Bunny Pillow|B1
-Other Pillow|B2
+Person Pillow|B1
+Regular Pillow|B2
 dictionary (Unlocked)|B3
 Key B (Achievement)|B3
 History Textbook|B4
