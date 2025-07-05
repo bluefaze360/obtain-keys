@@ -32,6 +32,9 @@
     - [Usage](#usage)
     - [Testing](#testing)
 - [The Game](#the-game)
+    - [Navigation](#navigation)
+    - [Minigames](#mini-games)
+- [Game Versions](#game-versions)
 
 ---
 
@@ -117,5 +120,25 @@ pytest
 Once you got the game running, it will initialize, and then show the menu:
 
 ![Here](https://github.com/bluefaze360/obtain-keys/blob/main/Images/init.png?raw=true)
+
+### Navigation
+
+To navigate, press W, A, S, or D, then enter.
+
+
+### Minigames
+
+There are five minigames: Sliding Tile Puzzle, Maze Runner 3D, Hangman, Guess The Number, and Guess The Number Without Exploding.
+
+There are also variants to these minigames.
+
+**Hangman**: Blind Hangman & Encrypted Hangman
+**Maze Runner 3D**: Maze Runner 2D
+
+
+## Game Versions
+
+[1.0](https://github.com/bluefaze360/obtain-keys/tree/main/1.0)
+
 
 
