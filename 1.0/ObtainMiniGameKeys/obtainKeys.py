@@ -1,6 +1,5 @@
 """
 Lance Wilson
-Prof. Lloyd
 CSC 110
 December 13, 2023
 
