@@ -31,6 +31,7 @@
     - [Installation](#installation)
     - [Usage](#usage)
     - [Testing](#testing)
+- [The Game](#the-game)
 
 ---
 
@@ -110,3 +111,9 @@ pytest
 <div align="left"><a href="#top">⬆ Return</a></div>
 
 ---
+
+## The Game
+
+Once you got the game running, it will initialize, and then show the menu:
+
+
