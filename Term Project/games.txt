@@ -1,8 +1,0 @@
-Sliding Tile Puzzle|A2
-Blind Hangman|A4
-Hangman|B2
-Encrypted Hangman|B3
-Guess the Number Without Exploding|C4
-Guess The Number|D2
-Maze Runner 3D|D3
-Maze Runner 2D|D3
