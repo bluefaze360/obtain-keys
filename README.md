@@ -115,5 +115,6 @@ pytest
 ## The Game
 
 Once you got the game running, it will initialize, and then show the menu:
+![Here](https://github.com/username/repo/blob/main/path/to/init.png?raw=true)
 
 
