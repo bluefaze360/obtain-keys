@@ -61,7 +61,7 @@ This project helps developers organize and access diverse game modules and envir
 This project requires the following dependencies:
 
 - **Programming Language:** Python
-- **Package Manager:** Conda
+- **Package Manager:** Conda (Pip is acceptable)
 
 ### Installation
 
