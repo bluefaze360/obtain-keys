@@ -61,7 +61,7 @@ This project helps developers organize and access diverse game modules and envir
 This project requires the following dependencies:
 
 - **Programming Language:** Python
-- **Package Manager:** Conda
+- **Package Manager:** Conda (Pip is acceptable)
 
 ### Installation
 
@@ -95,7 +95,7 @@ Run the project with:
 
 ```sh
 conda activate obtain-keys
-python TermProject/termProject.py
+python 1.0/ObtainMiniGameKeys/obtainKeys.py
 ```
 
 ### Testing
