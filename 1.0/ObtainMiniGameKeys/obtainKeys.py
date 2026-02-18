@@ -4,9 +4,10 @@ CSC 110
 December 13, 2023
 
 Game Title: Obtain the Minigame Keys
-Objective:
+Objective: Play the minigames to unlock the "Champion Room" and get as many points as you can!
 """
 import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 # import games
@@ -60,28 +61,31 @@ def mainMenu():
     global currentRoom, items, score
     key = ""
     beatGame = False
+
     # main game loop
     while key.upper() != "X":
         printActionChoices()
         key = input()
-        # if key.upper() == "ADMIN":
-        #     items.append(keyA)
-        #     items.append(keyB)
-        #     items.append(keyC)
-        #     items.append(defuser) # These lines were to test if the items affected the code as intended.
+        if key.upper() == "ADMIN":
+            items.append(keyA)
+            items.append(keyB)
+            items.append(keyC)
+            items.append(defuser) # These lines were to test if the items affected the code as intended.
+            print("ADMIN PRIVILEGES INITIALIZED")
 
         # Movement Bindings
+
         if key.upper() in ["W", "A", "S", "D"]:
             for relRooms in mapInfo:
                 # Champion Room (D4)
                 if relRooms[2] == currentRoom and relRooms[0] == "D4" and keyD not in items:
                     print(f"Cannot enter room until all keys have been unlocked. You are still in {currentRoom}.")
                     break
-                elif relRooms[2] == currentRoom and relRooms[0] == "D4" and keyD in items and (not beatGame):
+                elif relRooms[2] == currentRoom and relRooms[0] == "D4" and keyD in items and (not beatGame): # TODO: Find a way to enter D4 when player has KEY D.
                     print(f"Welcome, my champion! You are done with this whole game! You can exit if you want...")
                     # if the player goes back to room D4, a different message should be played.
-                    print(f"By the way, your score is: {score}")
-                    beatGame = True
+                    print(f"Your score is: {score}") # Implement SQL database, and implement pandas
+                    beatGame = True 
                     break
                 elif relRooms[2] == currentRoom and relRooms[0] == "D4" and keyD in items and beatGame:
                     print(f"Welcome, back, my champion! You can exit if you want...")
@@ -159,7 +163,7 @@ def readFiles():
 
 def readRoomFile():
     roomDescriptions = []
-    with open('TermProject/rooms.txt', 'r') as rooms:
+    with open(os.path.join(script_dir, 'rooms.txt'), 'r') as rooms:
         for room in rooms:
             roomDescriptions.append(room.rstrip("\n").split("|"))
     return roomDescriptions
@@ -167,7 +171,7 @@ def readRoomFile():
 
 def readMapFile():
     locDescriptions = []
-    with open('TermProject/map_layout.txt', 'r') as map_layout:
+    with open(os.path.join(script_dir, 'map_layout.txt'), 'r') as map_layout:
         for loc in map_layout:
             locDescriptions.append(loc.rstrip("\n").split(","))
 
@@ -187,7 +191,7 @@ def readMapFile():
 
 def readObjFile():
     objectDescriptions = []
-    with open('TermProject/objects.txt', 'r') as objects:
+    with open(os.path.join(script_dir, 'objects.txt'), 'r') as objects:
         for obj in objects:
             objectDescriptions.append(obj.rstrip("\n").split("|"))
     return objectDescriptions
@@ -195,7 +199,7 @@ def readObjFile():
 
 def readGameFile():
     gameDescriptions = []
-    with open('TermProject/games.txt', 'r') as games:
+    with open(os.path.join(script_dir, 'games.txt'), 'r') as games:
         for game in games:
             gameDescriptions.append(game.rstrip("\n").split("|"))
     return gameDescriptions
@@ -370,9 +374,9 @@ if __name__ == '__main__':
         main()
     except KeyboardInterrupt:
         print("That was sudden...")
-    finally:
-        print("Thanks for playing! Bye!")
-        sys.exit(f"KeyboardInterrupt: y you exit the game?!?!")
+    # finally: # silences exceptions. Comment out when debugging
+    #     print("Thanks for playing! Bye!")
+    #     sys.exit(f"KeyboardInterrupt: y you exit the game?!?!")
 
 """
 How did you approach this term project? Where did you get stuck, and how did you get unstuck?

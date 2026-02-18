@@ -28,7 +28,6 @@ def main():
 
         if gameBoard == getNewBoard():
             print('You won!')
-            sys.exit()
 
 
 def getNewBoard():

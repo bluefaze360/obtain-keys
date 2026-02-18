@@ -5,6 +5,7 @@ This code is available at https://nostarch.com/big-book-small-python-programming
 Tags: large, game, maze"""
 
 import sys, os
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Maze file constants:
 WALL = '#'
@@ -39,7 +40,7 @@ def main():
         # List all the maze files in the current folder:
         if filename.upper() == 'LIST':
             print('Maze files found in', os.getcwd())
-            for fileInCurrentFolder in os.listdir("Mazes"):
+            for fileInCurrentFolder in os.listdir(os.path.join(script_dir, "Mazes")):
                 print(fileInCurrentFolder)
 
             continue
@@ -48,8 +49,9 @@ def main():
             gameQuit = True
             break
 
-        if os.path.exists("TermProject/Mazes/maze" + filename + ".txt"):
-            break
+        if filename.isdigit() and 1 <= int(filename) <= 20:
+            if os.path.exists(os.path.join(script_dir, "Mazes", f"maze{filename}.txt")):
+                break
         print('Maze ' + filename + ' is an invalid number. Enter the number of the maze from 1-20 (or LIST or QUIT)')
     try:
         runMaze()
@@ -62,7 +64,7 @@ def runMaze():
     global gameQuit, gameFinished
     gameQuit = False
     # Load the maze from the Mazes directory:
-    mazeFile = open("TermProject/Mazes/maze" + filename + ".txt")
+    mazeFile = open(os.path.join(script_dir, "Mazes", f"maze{filename}.txt"))
     maze = {}
     lines = mazeFile.readlines()
     playerx = None
