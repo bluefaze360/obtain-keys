@@ -374,42 +374,6 @@ if __name__ == '__main__':
         main()
     except KeyboardInterrupt:
         print("That was sudden...")
-    # finally: # silences exceptions. Comment out when debugging
+    # finally: # These lines below silence exceptions. Comment out when debugging
     #     print("Thanks for playing! Bye!")
     #     sys.exit(f"KeyboardInterrupt: y you exit the game?!?!")
-
-"""
-How did you approach this term project? Where did you get stuck, and how did you get unstuck?
-
-One of the many places I got stuck was the Maze Runner programs, as they had functions I wasn't too familiar with. 
-However, I found a way to manipulate the code so that it looked at the Mazes directory, and made so the maze runner 
-programs were user-friendly.
-
-How did you test your program? What doesn’t work as you’d like, perhaps things that you’d like to fix as you learn 
-more? Write out at least 5 things that you tested. 
-
-There were a lot of things that didn't work as intended throughout this program. 
-
-1) When I edited this file on my MacBook, the open() wouldn't detect the .txt file (i.e. map_layout.txt) UNLESS I put 
-the absolute path. For Windows, it doesn't matter as much.
-
-2) I had to test if the [P] button played the game that the room was supposed to initialize, and if the game actually 
-ran as intended.
-
-3) I also had to test the games individually; to see if it actually worked or not. I would say this especially for 
-"Encrypted Hangman", because I imported a leetspeak translator, and there were some instances that it outputted None 
-(and after further testing, it was because I was trying to print a print function (the translate() function)).
-
-4) After testing the games, I tested all the usable items. I first tested the keys, since those are essential for 
-progression, and it took a while to configure it exactly. I then tested the unlockable items, like the torch, 
-if they changed the game played. For the case of the torch, it would light up the hangman game, and the player would 
-then see the letters.
-
-5) Finally, I had to prevent duplication while enabling the user to pick up the items again after they dropped them, 
-through the use of casting to a set, then casting back to a list, and then sorting the list.
-
-What did you learn from this assignment? Do you feel this assignment is worth saving for your professional portfolio?
-
-I learned about objectives while making a video game, and how to unlock certain missions with certain 
-items/prerequisites. This project is worth saving on GitHub, and I will probably keep updating this game.
-"""
