@@ -8,7 +8,7 @@ import sys
 import os
 
 # Add the parent directory to the path
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 import obtainKeys
 
@@ -22,7 +22,7 @@ class TestDataLoading:
         assert isinstance(result, list)
         assert len(result) > 0
 
-    def test_readRoomFile_records_have_required_fields(self):
+    def test_readRoomFile_records_have_required_fields(self): #TODO: Failed test
         """Each room record should have at least room ID and description."""
         result = obtainKeys.readRoomFile()
         for record in result:
