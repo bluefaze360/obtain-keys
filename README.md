@@ -5,7 +5,7 @@
 <div align="center">
 
 
-# OBTAIN-KEYS
+# OBTAIN KEYS
 
 <em>Unlock Possibilities, One Key at a Time</em>
 
