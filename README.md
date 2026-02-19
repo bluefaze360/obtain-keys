@@ -61,7 +61,7 @@ This project helps developers organize and access diverse game modules and envir
 This project requires the following dependencies:
 
 - **Programming Language:** Python
-- **Package Manager:** Conda (Pip is acceptable)
+- **Package Manager:** Conda (pip is acceptable)
 
 ### Installation
 
@@ -73,7 +73,7 @@ Build obtain-keys from the source and install dependencies:
     ❯ git clone https://github.com/bluefaze360/obtain-keys
     ```
 
-2. **Navigate to the project directory:**
+2. **Navigate to the project directory:** (or find it in your file manager (Finder - Mac. File Explorer - Windows)
 
     ```sh
     ❯ cd obtain-keys
