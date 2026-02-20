@@ -22,7 +22,7 @@ class TestDataLoading:
         assert isinstance(result, list)
         assert len(result) > 0
 
-    def test_readRoomFile_records_have_required_fields(self): #TODO: Failed test
+    def test_readRoomFile_records_have_required_fields(self):
         """Each room record should have at least room ID and description."""
         result = obtainKeys.readRoomFile()
         for record in result:
