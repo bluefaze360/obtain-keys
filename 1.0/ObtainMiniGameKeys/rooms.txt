@@ -2,17 +2,14 @@ A1|The room of amazement
 A2|The room of shaky floors
 A3|The room of two chances
 A4|The room of darkness
-
 B1|The room of newbs. Where everyone begins their adventure.
 B2|The room of ropes. Don't get hung!
 B3|The room of bewilderment. You will need a dictionary to understand most of the stuff in this room.
 B4|The room of past times. You can learn all the history of this game here.
-
 C1|The room of cretins
 C2|The room of giants
 C3|The room of elves
 C4|The room of explosions. Do not get exploded!
-
 D1|The room of fire
 D2|The room of dilemma
 D3|The room of lost souls. Most people that try to get this key here perish, swiftly.
