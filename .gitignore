@@ -11,3 +11,6 @@ venv/
 # Guides - for personal use
 Guides/
 Docs/project_reflection.md
+
+#.DS_Store, bc it shouldn't be there
+.DS_Store
